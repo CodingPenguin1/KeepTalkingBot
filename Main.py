@@ -1,0 +1,1 @@
+bombSpecs = {'serialNumberLastDigit': -1}
