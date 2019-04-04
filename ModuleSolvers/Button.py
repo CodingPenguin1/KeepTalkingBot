@@ -5,10 +5,10 @@
 # ============================================================
 
 
-def solveButton(indicatorColor,  # None/String: The color of the indicator. None type if the indicator color is unknown (the button isn't being held down)
-                buttonColor,     # String: The color of the button
-                buttonText,      # String: The text on the button
-                bombSpecs):      # Dictionary of bomb specs such as serial number last digit, parallel port, battery count, etc
+def solveButton(buttonColor,           # String: The color of the button
+                buttonText,            # String: The text on the button
+                bombSpecs,             # Dictionary of bomb specs such as serial number last digit, parallel port, battery count, etc
+                indicatorColor=None):  # None/String: The color of the indicator. None type if the indicator color is unknown (the button isn't being held down)
     if indicatorColor is None:
         if bombSpecs['numBatteries'] > 1 and buttonText == 'detonate':
             return 'Press and immediately release the button'

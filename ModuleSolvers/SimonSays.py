@@ -5,8 +5,8 @@
 # ============================================================
 
 
-def solveSimonSays(numStrikes,
-                   flashSequence,  # List of strings: colors flashed
+def solveSimonSays(flashSequence,  # List of strings: colors flashed
+                   numStrikes,
                    bombSpecs):     # Dictionary of bomb specs such as serial number last digit, parallel port, battery count, etc
     if bombSpecs['serialNumberVowel'] is True:
         if numStrikes == 0:

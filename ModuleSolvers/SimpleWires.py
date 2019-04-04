@@ -5,8 +5,8 @@
 # ============================================================
 
 
-def solveSimpleWires(bombSpecs,  # Dictionary of bomb specs such as serial number last digit, parallel port, battery count, etc
-                     wireList):  # List of strings stating wire colors (ex. ['red', 'blue', 'black'])
+def solveSimpleWires(wireList,    # List of strings stating wire colors (ex. ['red', 'blue', 'black'])
+                     bombSpecs):  # Dictionary of bomb specs such as serial number last digit, parallel port, battery count, etc
     if len(wireList) == 3:
         if wireList.count('red') == 0:
             return 'Cut the second wire'
