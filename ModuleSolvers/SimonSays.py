@@ -5,17 +5,17 @@
 # ============================================================
 
 
-def solveButton(numStrikes,
-                flashSequence,  # List of strings: colors flashed
-                bombSpecs):     # Dictionary of bomb specs such as serial number last digit, parallel port, battery count, etc
+def solveSimonSays(numStrikes,
+                   flashSequence,  # List of strings: colors flashed
+                   bombSpecs):     # Dictionary of bomb specs such as serial number last digit, parallel port, battery count, etc
     if bombSpecs['serialNumberVowel'] is True:
         if numStrikes == 0:
             for i in range(len(flashSequence)):
                 if flashSequence[i] == 'red':
                     flashSequence[i] = 'blue'
-                elif flashSequence[i] = 'blue':
+                elif flashSequence[i] == 'blue':
                     flashSequence[i] = 'red'
-                elif flashSequence[i] = 'green':
+                elif flashSequence[i] == 'green':
                     flashSequence[i] = 'yelllow'
                 else:
                     flashSequence[i] = 'green'
@@ -23,9 +23,9 @@ def solveButton(numStrikes,
             for i in range(len(flashSequence)):
                 if flashSequence[i] == 'red':
                     flashSequence[i] = 'yellow'
-                elif flashSequence[i] = 'blue':
+                elif flashSequence[i] == 'blue':
                     flashSequence[i] = 'green'
-                elif flashSequence[i] = 'green':
+                elif flashSequence[i] == 'green':
                     flashSequence[i] = 'blue'
                 else:
                     flashSequence[i] = 'red'
@@ -33,9 +33,9 @@ def solveButton(numStrikes,
             for i in range(len(flashSequence)):
                 if flashSequence[i] == 'red':
                     flashSequence[i] = 'green'
-                elif flashSequence[i] = 'blue':
+                elif flashSequence[i] == 'blue':
                     flashSequence[i] = 'red'
-                elif flashSequence[i] = 'green':
+                elif flashSequence[i] == 'green':
                     flashSequence[i] = 'yelllow'
                 else:
                     flashSequence[i] = 'blue'
@@ -44,9 +44,9 @@ def solveButton(numStrikes,
             for i in range(len(flashSequence)):
                 if flashSequence[i] == 'red':
                     flashSequence[i] = 'blue'
-                elif flashSequence[i] = 'blue':
+                elif flashSequence[i] == 'blue':
                     flashSequence[i] = 'yellow'
-                elif flashSequence[i] = 'green':
+                elif flashSequence[i] == 'green':
                     flashSequence[i] = 'green'
                 else:
                     flashSequence[i] = 'red'
@@ -54,9 +54,9 @@ def solveButton(numStrikes,
             for i in range(len(flashSequence)):
                 if flashSequence[i] == 'red':
                     flashSequence[i] = 'red'
-                elif flashSequence[i] = 'blue':
+                elif flashSequence[i] == 'blue':
                     flashSequence[i] = 'blue'
-                elif flashSequence[i] = 'green':
+                elif flashSequence[i] == 'green':
                     flashSequence[i] = 'yelllow'
                 else:
                     flashSequence[i] = 'green'
@@ -64,9 +64,9 @@ def solveButton(numStrikes,
             for i in range(len(flashSequence)):
                 if flashSequence[i] == 'red':
                     flashSequence[i] = 'yellow'
-                elif flashSequence[i] = 'blue':
+                elif flashSequence[i] == 'blue':
                     flashSequence[i] = 'green'
-                elif flashSequence[i] = 'green':
+                elif flashSequence[i] == 'green':
                     flashSequence[i] = 'blue'
                 else:
                     flashSequence[i] = 'red'
