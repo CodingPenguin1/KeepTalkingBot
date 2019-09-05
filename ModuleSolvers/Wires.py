@@ -1,12 +1,12 @@
 # ============================================================
-# Title: Keep Talking and Nobody Explodes Solver: Simple Wires
+# Title: Wires Solver
 # Author: Ryan J. Slater
 # Date: 4/3/2019
 # ============================================================
 
 
-def solveSimpleWires(wireList,    # List of strings stating wire colors (ex. ['red', 'blue', 'black'])
-                     bombSpecs):  # Dictionary of bomb specs such as serial number last digit, parallel port, battery count, etc
+def solveWires(wireList,    # List of strings stating wire colors (ex. ['red', 'blue', 'black'])
+               bombSpecs):  # Dictionary of bomb specs such as serial number last digit, parallel port, battery count, etc
     if len(wireList) == 3:
         if wireList.count('red') == 0:
             return 'Cut the second wire'

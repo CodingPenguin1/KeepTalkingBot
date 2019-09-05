@@ -20,7 +20,7 @@ def solveSimonSays(textList,    # List of strings [displayText, topLeft, topRigh
     elif textList[0] in ['blank', 'read', 'red', 'you', 'you\'re', 'their']:
         return getResponsesFromWord(textList[4])
     # Bottom Left
-    elif textList[0] in ['', 'reed', 'leed', 'they\'re]:
+    elif textList[0] in ['', 'reed', 'leed', 'they\'re']:
         return getResponsesFromWord(textList[5])
     # Bottom Right
     elif textList[0] in ['display', 'says', 'no', 'lead', 'hold on', 'you are', 'there', 'see', 'cee']:
@@ -45,7 +45,7 @@ def getResponsesFromWord(word):  # Word to be used as the key for step 2
         return 'UHHH, WHAT, LEFT, NOTHING, READY, BLANK, MIDDLE, NO, OKAY, FIRST, WAIT, YES, PRESS, RIGHT'.lower()
     elif word == 'uhhh':
         return 'READY, NOTHING, LEFT, WHAT, OKAY, YES, RIGHT, NO, PRESS, BLANK, UHHH, MIDDLE, WAIT, FIRST'.lower()
-    elif word == 'left:
+    elif word == 'left':
         return 'RIGHT, LEFT, FIRST, NO, MIDDLE, YES, BLANK, WHAT, UHHH, WAIT, PRESS, READY, OKAY, NOTHING'.lower()
     elif word == 'right':
         return 'YES, NOTHING, READY, PRESS, NO, WAIT, WHAT, RIGHT, MIDDLE, LEFT, UHHH, BLANK, OKAY, FIRST'.lower()
